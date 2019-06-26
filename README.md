@@ -13,6 +13,10 @@ $ sudo apt-get -y install libsnappy-dev
 
 $ sudo apt-get -y install libboost-all-dev
 
+$ sudo apt-get install make
+
+$ sudo apt-get install g++
+
 Step3, get the data
 
 $ cd ~/
@@ -26,6 +30,9 @@ $ cd ~/toc-release-code/
 $ wget https://leon.bottou.org/_media/projects/infimnist.tar.gz
 
 $ tar -xvzf infimnist.tar.gz
+
+$ cd ~/toc-release-code/infimnist
+$ make infimnist
 
 Step5, generate the data:
 You can first generate a small dataset with 5 file shards:
