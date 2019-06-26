@@ -1,0 +1,9 @@
+**/*.o
+**/.DS_Store
+**/*ipynb_checkpoints*
+**/*.pyc
+**/*.err
+data/mnist/raw_data/*
+data/mnist/mini_batches/*
+infimnist.tar.gz
+infimnist
