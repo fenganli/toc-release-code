@@ -7,19 +7,11 @@ Step2, install some dependencies:
 
 $ sudo apt-get update
 
-$ sudo apt-get install vim
-
 $ sudo apt-get install libgflags-dev libgoogle-glog-dev liblmdb-dev
 
 $ sudo apt-get -y install libsnappy-dev
 
 $ sudo apt-get -y install libboost-all-dev
-
-$ sudo apt-get -y install python3-pip
-
-$ sudo pip3 install absl-py
-
-$ sudo pip3 install matplotlib==2.1.1
 
 Step3, get the data
 
