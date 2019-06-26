@@ -43,7 +43,7 @@ $ make generate_mini_batches
 
 $ bash slice_infimnist.sh 5
 
-$ bash generate_mini_batches_libsvm 5
+$ bash generate_mini_batches_libsvm.sh 5
 
 If you want to see the full power of toc, you can generate a large dataset with 100 file
 shards, it may take a while though.
