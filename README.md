@@ -32,6 +32,7 @@ $ wget https://leon.bottou.org/_media/projects/infimnist.tar.gz
 $ tar -xvzf infimnist.tar.gz
 
 $ cd ~/toc-release-code/infimnist
+
 $ make infimnist
 
 Step5, generate the data:
