@@ -16,11 +16,10 @@ generate_libsvm_mini_batches_with_format () {
 }
 
 mkdir -p ../data/mnist/mini_batches/
-# echo "generating mat format"
-# generate_libsvm_mini_batches_with_format mat ../data/mnist/mini_batches/ ../data/mnist/raw_data $1
-# echo "generating toc format"
-# generate_libsvm_mini_batches_with_format toc ../data/mnist/mini_batches/ ../data/mnist/raw_data $1
-
+echo "generating mat format"
+generate_libsvm_mini_batches_with_format mat ../data/mnist/mini_batches/ ../data/mnist/raw_data $1
+echo "generating toc format"
+generate_libsvm_mini_batches_with_format toc ../data/mnist/mini_batches/ ../data/mnist/raw_data $1
 echo "generating csr format"
 generate_libsvm_mini_batches_with_format csr ../data/mnist/mini_batches/ ../data/mnist/raw_data $1
 echo "generating csrvi format"
