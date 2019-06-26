@@ -35,7 +35,7 @@ $ cd ~/toc-release-code/infimnist
 $ make infimnist
 
 Step5, generate the data:
-You can first generate a small dataset with 5 file shards:
+You can first generate a small dataset with 1 file shards:
 
 $ cd ~/toc-release-code/data_processing
 
