@@ -1,4 +1,4 @@
-This is guide for how to play around with TOC. See paper Tuple-oriented-compression for Large-scale Mini-batch Gradient Descent in Sigmod 2019 for more details.
+This is a guide for how to play around with TOC. See paper Tuple-oriented-compression for Large-scale Mini-batch Gradient Descent in Sigmod 2019 for more details.
 
 Step1, start a machine:
 In Google cloud, create a ubuntu 16.04 instance with 500 GB boot disk, 15 GB memory, and 4 CPUs.
