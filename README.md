@@ -21,7 +21,7 @@ $ git clone https://github.com/fenganli/toc-release-code.git
 
 Step4, get infimnist
 
-$ cd ~/
+$ cd ~/toc-release-code/
 
 $ wget https://leon.bottou.org/_media/projects/infimnist.tar.gz
 
