@@ -1424,13 +1424,6 @@ void Mat::MatMultiplyOtherMatInPlace(const std::vector<std::vector<double>>& oth
       }
     }
   }
-
-  // LOG(INFO) << "Mat, mat times other mat: "
-  //           << std::chrono::duration_cast<std::chrono::nanoseconds>(
-  //                  std::chrono::system_clock::now() - start)
-  //                      .count() /
-  //                  (1000.0 * 1000.0 * 1000.0)
-  //           << " secs";
 }
 
 std::vector<std::vector<double>> Mat::OtherMatMultiplyMat(
@@ -1441,13 +1434,6 @@ std::vector<std::vector<double>> Mat::OtherMatMultiplyMat(
     results[i].resize(dim);
   }
 
-  // for (int k=0; k < num_rows_; k++) {
-  //   for (int i=0; i < num_cols_; i++) {
-  //     for (int j =0; j < dim; j++) {
-  //       results[i][j] += other_mat[k][j] * data_[k][i];
-  //     }
-  //   }
-  // }
   for (int i = 0; i < num_cols_; i++) {
     for (int j = 0; j < dim; j++) {
       for (int k = 0; k < num_rows_; k++) {
@@ -1965,16 +1951,6 @@ std::vector<std::vector<double>> CsrMat::MatMultiplyOtherMat(
   for (int i = 0; i < num_rows_; i++) {
     results[i].resize(dim);
   }
-  // int run_index = 0;
-  // for (int i = 0; i < num_rows_; i++) {
-  //   for (int j=0; j<row_sizes_[i]; j++) {
-  //     int col_index = col_indexes_[run_index];
-  //     double value = values_[run_index++];
-  //     for (int k = 0; k < dim; k++) {
-  //       results[i][k] += value * other_mat[col_index][k];
-  //     }
-  //   }
-  // }
   for (int k = 0; k < dim; k++) {
     int run_index = 0;
     for (int i = 0; i < num_rows_; i++) {
@@ -2031,16 +2007,6 @@ std::vector<std::vector<double>> CsrMat::OtherMatMultiplyMat(
   for (int i = 0; i < num_cols_; i++) {
     results[i].resize(dim);
   }
-  // int run_index = 0;
-  // for (int i=0; i<num_rows_; i++) {
-  //   for (int j=0; j<row_sizes_[i]; j++) {
-  //     int col_index = col_indexes_[run_index];
-  //     double value = values_[run_index++];
-  //     for (int k = 0; k < dim; k++) {
-  //       results[col_index][k] += other_mat[i][k] * value;
-  //     }
-  //   }
-  // }
   for (int k = 0; k < dim; k++) {
     int run_index = 0;
     for (int i = 0; i < num_rows_; i++) {
